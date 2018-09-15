@@ -1,0 +1,3 @@
+br\com\rendti\livroapi\model\Author.class
+br\com\rendti\livroapi\AuthorController.class
+br\com\rendti\livroapi\model\Book.class

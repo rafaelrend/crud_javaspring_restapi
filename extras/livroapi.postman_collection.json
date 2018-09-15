@@ -1,0 +1,251 @@
+{
+	"info": {
+		"_postman_id": "3d062c67-d4c3-480f-9e94-061e4774efac",
+		"name": "Livro Api Estudos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "authors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://rafaeldell-pc:9000/authors/",
+					"protocol": "http",
+					"host": [
+						"rafaeldell-pc"
+					],
+					"port": "9000",
+					"path": [
+						"authors",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "author by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cadastrar author",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Rubalinho dos anjos\"\n\t\n}"
+				},
+				"url": {
+					"raw": "http://rafaeldell-pc:9000/authors/",
+					"protocol": "http",
+					"host": [
+						"rafaeldell-pc"
+					],
+					"port": "9000",
+					"path": [
+						"authors",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update author",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Fliquinha Flipo\",\n    \"id\": 4\n\t\n}"
+				},
+				"url": {
+					"raw": "http://rafaeldell-pc:9000/authors/4",
+					"protocol": "http",
+					"host": [
+						"rafaeldell-pc"
+					],
+					"port": "9000",
+					"path": [
+						"authors",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete author",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Rubalinho dos anjos",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://rafaeldell-pc:9000/authors/5",
+					"protocol": "http",
+					"host": [
+						"rafaeldell-pc"
+					],
+					"port": "9000",
+					"path": [
+						"authors",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://rafaeldell-pc:9000/books/",
+					"protocol": "http",
+					"host": [
+						"rafaeldell-pc"
+					],
+					"port": "9000",
+					"path": [
+						"books",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cadastrar book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n        \"title\": \"Passarinho Feliz\",\n        \"isbn\": \"12365412AAtR\",\n        \"description\": \"A incrível história do passaro\",\n        \"stock\": 6,\n        \"author\": {\n            \"id\": 1\n        }\n    }"
+				},
+				"url": {
+					"raw": "http://rafaeldell-pc:9000/books/",
+					"protocol": "http",
+					"host": [
+						"rafaeldell-pc"
+					],
+					"port": "9000",
+					"path": [
+						"books",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update book",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n  \t    \"id\": \"3\",\n        \"title\": \"PostMan edição\",\n        \"isbn\": \"333333\",\n        \"description\": \"Edição via postman. Exemplo prático\",\n        \"stock\": 7,\n        \"author\": {\n            \"id\": 3\n        }\n    }"
+				},
+				"url": {
+					"raw": "http://rafaeldell-pc:9000/books/3",
+					"protocol": "http",
+					"host": [
+						"rafaeldell-pc"
+					],
+					"port": "9000",
+					"path": [
+						"books",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete book",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Rubalinho dos anjos",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://rafaeldell-pc:9000/authors/5",
+					"protocol": "http",
+					"host": [
+						"rafaeldell-pc"
+					],
+					"port": "9000",
+					"path": [
+						"authors",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
